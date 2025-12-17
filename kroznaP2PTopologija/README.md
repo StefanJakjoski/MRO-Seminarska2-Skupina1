@@ -1,4 +1,4 @@
-# Pomembni datoteke
+# Pomembne datoteke
 
 - src -> Node.cc
 - src -> Node.ned

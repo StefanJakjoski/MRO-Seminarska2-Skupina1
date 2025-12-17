@@ -1,0 +1,175 @@
+version 3
+run General-0-20251217-20:43:39-126838
+attr configname General
+attr datetime 20251217-20:43:39
+attr datetimef 20251217-204339
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ringtopology.simulations.circularTopology
+attr processid 126838
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config network ringtopology.simulations.circularTopology
+config sim-time-limit 100s
+config circularTopology.numNodes 7
+config **.hopLimit 10
+config **.node*.packetDelay.vector-recording true
+config **.startId 1
+config **.destinationId 5
+config **.isPacket true
+config **.packetSize 4096*16*16
+config **.datarate 20Mbps
+
+par circularTopology.node[0].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[0].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[0].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[0].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[0].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[0].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[1].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[1].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[1].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[1].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[1].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[1].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[2].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[2].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[2].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[2].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[2].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[2].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[3].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[3].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[3].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[3].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[3].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[3].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[4].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[4].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[4].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[4].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[4].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[4].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[5].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[5].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[5].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[5].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[5].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[5].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[6].out[0].channel typename "\"ned.DatarateChannel\""
+par circularTopology.node[6].out[0].channel disabled false
+attr mutable ""
+par circularTopology.node[6].out[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par circularTopology.node[6].out[0].channel datarate 2e+07bps
+attr mutable ""
+attr unit bps
+par circularTopology.node[6].out[0].channel ber 0
+attr mutable ""
+par circularTopology.node[6].out[0].channel per 0
+attr mutable ""
+par circularTopology.node[0] typename "\"ringtopology.Node\""
+par circularTopology.node[0] nodeId 0
+par circularTopology.node[0] hopLimit 10
+par circularTopology.node[0] startId 1
+par circularTopology.node[0] destinationId 5
+par circularTopology.node[0] isPacket true
+par circularTopology.node[0] packetSize 1048576
+par circularTopology.node[1] typename "\"ringtopology.Node\""
+par circularTopology.node[1] nodeId 0
+par circularTopology.node[1] hopLimit 10
+par circularTopology.node[1] startId 1
+par circularTopology.node[1] destinationId 5
+par circularTopology.node[1] isPacket true
+par circularTopology.node[1] packetSize 1048576
+par circularTopology.node[2] typename "\"ringtopology.Node\""
+par circularTopology.node[2] nodeId 0
+par circularTopology.node[2] hopLimit 10
+par circularTopology.node[2] startId 1
+par circularTopology.node[2] destinationId 5
+par circularTopology.node[2] isPacket true
+par circularTopology.node[2] packetSize 1048576
+par circularTopology.node[3] typename "\"ringtopology.Node\""
+par circularTopology.node[3] nodeId 0
+par circularTopology.node[3] hopLimit 10
+par circularTopology.node[3] startId 1
+par circularTopology.node[3] destinationId 5
+par circularTopology.node[3] isPacket true
+par circularTopology.node[3] packetSize 1048576
+par circularTopology.node[4] typename "\"ringtopology.Node\""
+par circularTopology.node[4] nodeId 0
+par circularTopology.node[4] hopLimit 10
+par circularTopology.node[4] startId 1
+par circularTopology.node[4] destinationId 5
+par circularTopology.node[4] isPacket true
+par circularTopology.node[4] packetSize 1048576
+par circularTopology.node[5] typename "\"ringtopology.Node\""
+par circularTopology.node[5] nodeId 0
+par circularTopology.node[5] hopLimit 10
+par circularTopology.node[5] startId 1
+par circularTopology.node[5] destinationId 5
+par circularTopology.node[5] isPacket true
+par circularTopology.node[5] packetSize 1048576
+par circularTopology.node[6] typename "\"ringtopology.Node\""
+par circularTopology.node[6] nodeId 0
+par circularTopology.node[6] hopLimit 10
+par circularTopology.node[6] startId 1
+par circularTopology.node[6] destinationId 5
+par circularTopology.node[6] isPacket true
+par circularTopology.node[6] packetSize 1048576
+par circularTopology typename "\"ringtopology.simulations.circularTopology\""
+par circularTopology numNodes 7
+par circularTopology datarate 2e+07bps
+attr unit bps
+

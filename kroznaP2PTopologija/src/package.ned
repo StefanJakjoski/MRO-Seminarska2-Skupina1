@@ -1,0 +1,3 @@
+package ringtopology;
+
+@license(LGPL);

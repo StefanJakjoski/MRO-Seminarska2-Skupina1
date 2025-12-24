@@ -29,7 +29,7 @@ Tako omrežje je torej decentralizirano.
 
 - Več možnih poti omogoča boljšo odpornost do napak: če povezava odpove, uberemo drugo pot
 - Raztegljivo (scalable) omrežje: dodajanje naprave ne spremeni strukture obstoječega omrežja
-- Učinkovit prenos podatkov: ne potujejo skozi centralno napravo
+- Učinkovit prenos podatkov: ne potujejo skozi centralno vozlišče
 
 ### Slabosti
 
@@ -39,6 +39,34 @@ Tako omrežje je torej decentralizirano.
 
 ## Fat tree topologija
 
-## Zvezdna topologija
+## Zvezdasta topologija
+V omrežju z zvezdasto topologijo je vsaka naprava povezana na skupno centralno vozlišče (hub)
+Ločimo aktivno in pasivno zvezdasto topologijo.
+Pri aktivni centralno vozlišče pošlje prejeto sporočilo napravam v omrežju, pri pasivni pa centralno vozlišče služi le kot povezava.
+
+### Prednosti
+- Odpornost do napak
+- Eliminira trke paketov
+- Cenovno ugodno: vsaka naprava potrebuje le ena vrata za komunikacijo
+- Raztegljivo: dodajanje naprave ne spremeni strukture obstoječega omrežja
+- Enostavna diagnoza napak
+
+### Slabosti
+- Centralno vozlišče je točka odpovedi
+- Zmogljivost odvisna od centralnega vozlišča
 
 ## Spine leaf topologija
+Je topologija, sestavljena iz dveh slojev stikal: leaf in spine
+Uporabljena je v glavnem v podatkovnih centrih, kjer imamo opravka z velikim številom naprav.
+Je alternativa tradicionalni troslojni arhitekturi
+Leaf: stikala, ki prejemajo podatke
+Spine: stikala, ki leaf sloj povezujejo v mrežasto topologijo
+
+### Prednosti
+- Redundanca stikal
+- Raztegljivost
+- Nizka latenca v primerjavi s tradicionalno
+
+### Slabosti
+- Potrebujemo več stikal
+- Za veliko uporab prekompleksna topologija

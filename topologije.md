@@ -1,4 +1,4 @@
-# Topologiji
+# Topologije
 
 ## Krožna point-to-point topologija
 
@@ -17,3 +17,28 @@ V krožnih topologijah lahko podatke hkrati prenaša le eno vozlišče. To se na
 
 - Če eno vozlišče odpove, se celotno omrežje izklopi.
 - Zmogljivost omrežja je enostavno preobremeniti.
+
+
+
+## Mrežasta (mesh) topologija
+
+V omrežju z mesh topologijo je vsaka naprava povezana direktno z vsako drugo napravo.
+Tako omrežje je torej decentralizirano.
+
+### Prednosti
+
+- Več možnih poti omogoča boljšo odpornost do napak: če povezava odpove, uberemo drugo pot
+- Raztegljivo (scalable) omrežje: dodajanje naprave ne spremeni strukture obstoječega omrežja
+- Učinkovit prenos podatkov: ne potujejo skozi centralno napravo
+
+### Slabosti
+
+- Kompleksna izdelava in vzdrževanje: vsaka naprava je povezana z vsako (alternativa: delno mrežasta topologija)
+- Visoka cena
+- Možnost redundantnih povezav
+
+## Fat tree topologija
+
+## Zvezdna topologija
+
+## Spine leaf topologija

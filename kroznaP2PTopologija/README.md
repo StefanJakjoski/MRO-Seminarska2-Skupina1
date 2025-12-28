@@ -49,7 +49,6 @@ gates:
 
 ## Kanal DatarateChannel
 
-## Tip kanala
 ```
 DatarateChannel { datarate = 100Mbps; delay = 1ms; }
 ```

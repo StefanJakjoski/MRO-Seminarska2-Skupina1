@@ -9,3 +9,102 @@
 ## Navodila
 
 Projekt je mogoče ponovno ustvariti z osnovnem setup in le z vključitvijo zgoraj omenjenih datotek.
+
+# Opis uporabljenih gradnikov (modulov in kanalov)
+
+V analiziranem zgledu krožne P2P topologije so bili uporabljeni osnovni gradniki simulacijskega okolja OMNeT++, ki omogočajo modeliranje omrežnih vozlišč, komunikacijskih povezav in časovnega poteka dogodkov. Model ne uporablja ogrodja INET, temveč temelji na lastno definiranih modulih in standardnih OMNeT++ kanalih.
+
+## Modul node
+
+```
+simple Node
+```
+Modul `Node` predstavlja posamezno omrežno vozlišče v krožni P2P topologiji.
+
+### Funkcionalnost
+
+Vsak modul:
+* sprejema sporočila prek vhodnih vrat (in[]),
+* obdeluje sporočila v metodi handleMessage(),
+* posreduje sporočila naslednjemu vozlišču v krogu prek izhodnih vrat (out[]).
+
+| Metoda             | Opis                                                                                          |
+| ------------------ | --------------------------------------------------------------------------------------------- |
+| `initialize()`     | Inicializacija ID-ja vozlišča, postavitev v krožno obliko, inicializacija začetnega sporočila |
+| `handleMessage()`  | Sprejem in obdelava sporočil                                                                  |
+| `forwardMessage()` | Posredovanje sporočila naslednjemu vozlišču                                                   |
+
+## Vrata (Gates)
+
+```
+gates:
+    input in[];
+    output out[];
+```
+
+### Namen
+* omogočajo razširljivo povezovanje poljubnega števila vozlišč,
+* omogočajo uporabo zank `for` v definiciji povezav,
+* podpirajo avtomatsko indeksiranje povezav.
+
+## Kanal DatarateChannel
+
+## Tip kanala
+```
+DatarateChannel { datarate = 100Mbps; delay = 1ms; }
+```
+
+Kanal `DatarateChannel` modelira fizično komunikacijsko povezavo med dvema vozliščema z omejeno pasovno širino in zakasnitvijo.
+
+### Parametri
+| Parameter  | Opis                              |
+| ---------- | --------------------------------- |
+| `datarate` | Hitrost prenosa podatkov (bit/s)  |
+| `delay`    | Propagacijska zakasnitev povezave |
+
+### Model zakasnitve
+`t = delay + (velikost paketa / datarate)`
+
+## Omrežni modul circularTopology
+
+```
+network circularTopology
+```
+
+Ta modul predstavlja celotno omrežje in vsebuje:
+* vektorski seznam vozlišč node[numNodes],
+* definicijo krožnih povezav med vozlišči.
+
+### Topološka struktura
+Povezave so definirane z zanko:
+```
+for i=0..numNodes-1 {
+    node[i].out++ --> DatarateChannel --> node[(i+1)%numNodes].in++;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

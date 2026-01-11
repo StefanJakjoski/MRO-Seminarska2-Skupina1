@@ -106,7 +106,7 @@ V tem seminarju obravnavamo štiri najpogostejše omrežne topologije:
     
     \subsubsection*{Slabosti}
     \begin{itemize}
-        \item Kompleksna izdelava in vzdrževanje: vsaka naprava je povezana z vsako
+        \item Kompleksna izdelava in vzdrževanje: vsaka naprava je povezana z vsako (alternativa: delno mrežasta topologija)
         \item Visoka cena
         \item Možnost redundantnih povezav
     \end{itemize}
@@ -117,8 +117,8 @@ V tem seminarju obravnavamo štiri najpogostejše omrežne topologije:
     
     \subsubsection*{Prednosti}
     \begin{itemize}
-        \item Naenkrat lahko prenaša le eno vozlišče, kar zmanjšuje trke paketov
-        \item Implementacija je pogosto preprosta; kompleksnost dodajanja več vozlišč se linearno skalira, za razliko od kvadratnega skaliranja mrežaste topologije
+        \item Naenkrat lahko prenaša le eno vozlišče, kar zmanjšuje trke paketov (packet collision)
+        \item Implementacija je pogosto preprosta; kompleksnost dodajanja več vozlišč se linearno skalira, za razliko od kvadratnega skaliranja mrežaste (mesh) topologije
     \end{itemize}
     
     \subsubsection*{Slabosti}
@@ -144,6 +144,8 @@ V tem seminarju obravnavamo štiri najpogostejše omrežne topologije:
 \end{enumerate}
 
 V tem delu podrobno analiziramo \textbf{krožno topologijo P2P} in jo implementiramo v orodju OMNeT++. Krožna topologija je posebej primerna za analizo prometnih nasičenj, saj ima deterministično pot prenosa -- vsak paket potuje od izvornega do ciljnega vozlišča po krožni poti \cite{omnetpp}.
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Opis protokola}
@@ -188,6 +190,8 @@ Za implementacijo krožne topologije smo uporabili naslednje komponente ogrodja 
 
 \subsection{NED jezik}
 Za opis topologije omrežja uporabljamo NED jezik, ki omogoča deklarativno definicijo modulov, povezav in parametrov.
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Rešitev}
@@ -268,6 +272,8 @@ void Node::handleMessage(cMessage *msg) {
     forwardPacket(pkt);
 }
 \end{lstlisting}
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulacije in rezultati}
@@ -431,6 +437,8 @@ Stanje omrežja & Blokirano & Obremenjeno & Optimalno & Prosto \\
 \hline
 \end{tabular}
 \end{table}
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zaključek}

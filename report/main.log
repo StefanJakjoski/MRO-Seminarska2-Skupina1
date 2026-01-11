@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.10)  11 JAN 2026 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.10)  11 JAN 2026 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1172,18 +1172,19 @@ st/fonts/enc/dvips/base/8r.enc}]
 [2]
 
 [3]
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 208.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 208.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 208.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 208.
-
 
 [4]
+
+[5]
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 212.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 212.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 212.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 212.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-21.
+25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -1197,34 +1198,39 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 223.
+nput line 227.
 
-
-[5]
 
 [6]
-Package pgfplots info on input line 337: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
-Package pgfplots info on input line 365: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
-
 
 [7]
-Package pgfplots info on input line 394: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 343: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
 
 [8]
-Overfull \hbox (3.6198pt too wide) in paragraph at lines 406--407
+Package pgfplots info on input line 371: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+
+[9]
+Package pgfplots info on input line 400: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+
+[10]
+Overfull \hbox (3.6198pt too wide) in paragraph at lines 412--413
 \OT1/ptm/m/n/10 Na pod-lagi re-zul-ta-tov lahko dolo[]cimo op-ti-malno ka-pa-ci
 -teto po-ve-zav za na[]se omre[]zje: 
  []
 
 
 
-[9] (./main.bbl)
+[11]
 
-[10] (./main.aux)
+[12] (./main.bbl)
+
+[13] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1233,9 +1239,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 93CB5014DCC9162DDFC3BA58E754781E;4311.
  ) 
 Here is how much of TeX's memory you used:
- 37367 strings out of 474494
- 832731 string characters out of 5746956
- 1570930 words of memory out of 5000000
+ 37370 strings out of 474494
+ 832752 string characters out of 5746956
+ 1567630 words of memory out of 5000000
  59707 multiletter control sequences out of 15000+600000
  599930 words of font info for 121 fonts, out of 8000000 for 9000
  395 hyphenation exceptions out of 8191
@@ -1246,10 +1252,10 @@ e/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 112575 bytes).
+Output written on main.pdf (13 pages, 113674 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 500000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 97 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
